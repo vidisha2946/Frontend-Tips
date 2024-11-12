@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Info Card</title>
+<style>
+    /* General body styling */
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url("heart.jpg");
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; /* Prevents background repetition */
+        background-attachment: fixed;
+    }
+
+    /* Card container styling */
+    .info-card {
+        position: relative;
+        width: 300px;
+        padding: 20px;
+        background-image: url("heart.jpg");
+        border-radius: 15px;
+        box-shadow: 0 8px 50px rgba(0, 0, 0, 12);
+        text-align: center;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        background-position: center; /* Prevents background repetition */
+        background-attachment: fixed;
+    }
+    
+    /* Heart icon style */
+    .heart-icon {
+        font-size: 50px;
+        color: #e63946;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    
+    /* On hover, scale up card slightly */
+    .info-card:hover {
+        transform: scale(1.05);
+    }
+
+    /* Hidden information box */
+    .info-text {
+        margin-top: 15px;
+        color: #960707;
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        transform: translateY(10px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    /* Show information on hover */
+    .info-card:hover .info-text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Glow effect on heart icon when hovering over the card */
+    .info-card:hover .heart-icon {
+        color: #d90429;
+        transform: scale(1.1);
+    }
+</style>
+</head>
+<body>
+
+<div class="info-card">
+    <div class="heart-icon">❤️</div>
+    <div class="info-text">
+        Love is the purest emotion, filling life with joy, peace, and warmth. Treasure those who bring love into your life.
+    </div>
+</div>
+
+</body>
+</html>
