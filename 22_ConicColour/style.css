@@ -1,0 +1,8 @@
+
+  .conic-grad {
+  background: conic-gradient(red 25%, blue 0 50%, yellow 0 75%, black 0);
+  width: 200px;
+ height: 200px;
+ border-radius: 50%;
+}
+  
